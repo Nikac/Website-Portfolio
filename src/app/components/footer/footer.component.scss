@@ -1,0 +1,77 @@
+.footer {
+	width: 100%;
+	height: 50px;
+	background: #272727;
+	.copywright {
+		float: left;
+		font-family: 'Conv_Tahoma';
+		font-size: 15px;
+		color: #f4d558;
+		padding-top: 15px;
+		margin: 0;
+	}
+}
+
+.footer-social {
+	float: right;
+	list-style: none;
+	margin: 0;
+	li {
+		list-style: none;
+		display: inline-block;
+		border-radius: 50%;
+		background: #323232;
+		margin-top: 10px;
+		margin-right: 10px;
+		a {
+			height: 30px;
+			width: 30px;
+			display: table-cell;
+		    vertical-align: middle; 
+		    text-align: center; 
+
+		}
+	}
+	.facebook {
+		&:hover {
+			background-color: #46599b;
+			border-radius: 50%;
+		}
+	}
+	.twitter {
+		&:hover {
+			background-color: #71aee0;
+			border-radius: 50%;
+		}
+	}
+	.dribble {
+		&:hover {
+			background: #c379a2;
+			border-radius: 50%;
+		}
+	}
+	.vimeo {
+		&:hover {
+			background: #9fdce7;
+			border-radius: 50%;
+		}
+	}
+	.forrst {
+		&:hover {
+			background: #4e8234;
+			border-radius: 50%;
+		}
+	}
+	.skype {
+		&:hover {
+			background: #6fc5fd;
+			border-radius: 50%;
+		}
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.footer-social {
+		display: none;
+	}
+}

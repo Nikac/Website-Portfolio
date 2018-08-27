@@ -1,0 +1,18 @@
+<div class="services-bckg">
+	<div class="container">
+		<!-- headings -->
+		<h1 class="services-heading">Our Services</h1>
+		<h3 class="services-heading-sec">We Craft Creative User Friendly Themes & Applications to our Clients.</h3>
+		<hr class="divide-map">
+		<div class="row">
+			<!-- searvice each -->
+			<app-service 
+				*ngFor="let service of ourServices" 
+				[serv]="service"
+				class="col-xs-12 col-sm-12 col-md-4"></app-service>
+		</div>
+		<!-- ottom headings -->
+		<h1 class="service-heading-bottom">Have an idea, what are you waiting for?</h1>
+		<h2 class="service-heading-bottom-sec">write us an <span class="email-letters">e-mail</span> & <span class="get-letters">Get started.</span> </h2>
+	</div>
+</div>

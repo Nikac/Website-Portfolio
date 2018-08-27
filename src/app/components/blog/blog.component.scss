@@ -1,0 +1,266 @@
+@import '../../../styles/colors';
+
+// section blog
+.blog-bckg {
+	width: 100%;
+	background: url('/assets/img/services-bckg.png');
+	padding: 40px 0;
+}
+// headings
+.blog-heading {
+	font-size: 55px;
+	font-family: 'Conv_Helvetica-Light';
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.blog-heading-sec { 
+	margin: 0 auto;
+	font-size: 30px;
+	font-family: 'Conv_Boton-Regular';
+	background: $yellowColor;
+	padding: 5px 15px;
+	display: table;
+	text-shadow: 1px 1px 1px $whiteColor;
+	margin-bottom: 20px;
+}
+// line
+.divide-map {
+	margin-bottom: 20px;
+}
+
+.row {
+	margin-top: 20px;
+}
+// select element
+.form-control {
+	font-family: 'Conv_Tahoma';
+	font-size: 20px;
+	padding: 5px;
+	-moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+    height: 60px;
+    border-radius: 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.yellow-box {
+	width: 50px;
+	height: 50px;
+	background: $yellowColor;
+	margin-top: -55px;
+	margin-right: 5px;
+	float: right;
+	img {
+		margin-top: 40%;
+		margin-left: 40%;
+	}
+}
+
+// margins and colons
+.col-gap {
+	width: 47%;
+	margin-right: 25px;
+	padding-right: 0;
+}
+
+.col-gap-sec {
+	width: 47%;
+	margin-left: 25px;
+	padding-left: 0;
+}
+
+// blog each
+figure {
+	display: inline-block;
+	width: 47%;
+	min-width: 30%;
+	padding: 0;
+	background: $whiteColor;
+	margin-bottom: 30px;
+	margin-right: 50px;
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	img {
+		width: 100%;
+	}
+}
+
+figure:nth-child(even) {
+	margin-right: 0;
+}
+
+figcaption {
+	padding: 20px 10px 10px 10px;
+	h1 {
+		font-size: 20px;
+		font-family: 'Conv_Tahoma';
+		height: 20px;
+	}
+	p {
+		font-size: 12px;
+		font-family: 'Conv_Tahoma';
+		margin-bottom: 10px;
+		color: $grayParagrph;
+	}
+	.blog-description {
+		font-size: 13px;
+		color: black;
+	}
+	.blog-btn {
+		background: $yellowColor;
+		border: 0;
+		font-family: 'Conv_Tahoma';
+		font-size: 13px;
+		padding: 5px 7px;
+		float: right;
+		margin-bottom: 10px;
+		cursor: pointer;
+		img {
+			width: 6px;
+			height: 6px;
+		}
+	}
+}
+
+// pagination
+.page-link {
+	color: $blackColor;
+	font-family: 'Conv_Tahoma';
+	font-size: 15px;
+}
+
+.page-item{
+	margin-right: 10px;	
+	-webkit-box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	-moz-box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	box-shadow: 0px 3px 0px 0px rgba(209,209,209,1);
+	.page-link {
+		&:hover {
+			background-color: $yellowColor;
+		}
+	}
+	
+}
+
+// responsive
+@media screen and (max-width: 1050px) {
+	.blog-heading {
+		font-size: 45px;
+	}
+	.blog-heading-sec {
+		font-size: 30px;
+	}
+	.form-control {
+		font-size: 18px;
+	}
+	.col-sm-12 {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 980px) {
+	figure {
+		width: 46.4%;
+	}
+	figcaption {
+		padding: 20px 10px 10px 10px;
+		h1 {
+		  font-size: 16px;
+		  font-family: 'Conv_Tahoma';
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.blog-heading {
+		font-size: 40px;
+	}
+	.blog-heading-sec {
+		font-size: 25px;
+	}
+	.form-control {
+		height: 50px;
+		font-size: 16px;
+	}
+	.yellow-box {
+		width: 40px;
+		height: 40px;
+		background: $yellowColor;
+		margin-top: -45px;
+		margin-right: 5px;
+		float: right;
+		img {
+			margin-top: 35%;
+			margin-left: 35%;
+		}
+	}
+}
+
+@media screen and (max-width: 980px) {
+	figure {
+		width: 46%;
+	}
+	figcaption {
+		padding: 20px 10px 10px 10px;
+		h1 {
+		  font-size: 16px;
+		  font-family: 'Conv_Tahoma';
+		  height: 25px;
+		}
+	}
+}	
+
+@media screen and (max-width: 750px) {
+	.blog-heading-sec {
+		text-align: center;
+	}
+	figure {
+		width: 97%;
+		margin-left: 3%;
+	}
+	.col-gap {
+		width: 100%;
+		display: block;
+		margin-right: 25px;
+		padding-right: 0;
+	}
+
+	.col-gap-sec {
+		display: block;
+		width: 100%;
+		margin-left: 25px;
+		padding-left: 0;
+	}
+}
+	
+@media screen and (max-width: 700px) {
+	.blog-heading {
+		font-size: 35px;
+	}
+
+	.blog-heading-sec {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.mob-vers {
+		display: none;
+	}
+	// select element
+	.form-control {
+		display: none;
+	}
+	.yellow-box {
+		display: none;
+	}
+	figure {
+		width: 95%;
+		margin-left: 5%;
+	}
+}
+

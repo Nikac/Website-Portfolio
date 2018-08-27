@@ -1,0 +1,24 @@
+<div class="service-circle">
+	<img src="{{serv.imgPath}}" alt="{{serv.description}}" class="service-main-img img-fluid">
+	<h4 class="service-title">{{serv.title}}</h4>
+	<img src="/assets/img/lines-in-circle.png" alt="lines image" class="service-lines">	
+</div>
+<p class="service-text">{{serv.text}}</p>
+<div class="our-knowledge">
+	<div class="row">
+		<div class="col-md-12 col-gap">
+			<div class="row box">
+				<ul class="one">
+					<li *ngFor="let knowledge of serv.weDo">
+						<img src="assets/img/arrow.png" alt="arrow icon"> {{knowledge.name}}
+					</li>
+				</ul>
+				<ul class="two">
+				   <li *ngFor="let knowledge of serv.other">
+						<img src="assets/img/arrow.png" alt="arrow icon"> {{knowledge.name}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

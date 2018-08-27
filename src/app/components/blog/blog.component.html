@@ -1,0 +1,77 @@
+<div class="blog-bckg">
+	<div class="container">
+		<!-- headings -->
+		<h1 class="blog-heading">Our Blog</h1>
+		<h3 class="blog-heading-sec">Stay Connect With Our Latest Themes & Applications.</h3>
+		<hr class="divide-map">
+		<div class="row">
+			<div class="col col-gap">
+				<div class="form-group colsm-12">
+					<!-- dropdwon menu -->
+					<select 
+						name="categories" 
+						class="form-control" 
+						id="categories">
+						<option
+					      *ngFor="let category of categories"
+						  [value]="category.id">
+								{{category.name}}
+						</option>
+					</select>
+					<div class="yellow-box"><img src="assets/img/arrow-down-black.png" alt="arrow icon"></div>
+				</div>
+			</div>
+			<div class="col col-gap-sec">
+				<div class="form-group col-sm-12">
+					<!-- dropdown menu -->
+					<select 
+						name="archive" 
+						class="form-control" 
+						id="archive">
+						<option
+							*ngFor="let arch of archives" 
+							[value]="arch.id">
+								{{arch.name}}
+						</option>
+					</select>
+					<div class="yellow-box"><img src="assets/img/arrow-down-black.png" alt="arrow icon"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<!-- each blog  -->
+				<figure *ngFor="let blog of blogs" >
+					<img src="{{blog.imgPath}}" alt="">
+					<figcaption>
+						<p>{{blog.date}}</p>
+						<h1>{{blog.title}}</h1>
+						<p>Category {{blog.category}} / Comments </p>
+						<hr>
+						<p class="blog-description">{{blog.description}}</p>
+						<button class="blog-btn">Read on <img src="assets/img/arrow.png" alt="arrow icon"></button>
+					</figcaption>
+				</figure>
+				<!-- pagination -->
+				<nav aria-label="Page navigation example">
+				  <ul class="pagination justify-content-center">
+				    <li class="page-item">
+				      <a class="page-link" href="#" tabindex="-1">
+				      	<img src="assets/img/pagination-arrow-left.png" alt="arrow icon"> Previous
+				      </a>
+				    </li>
+				    <li class="page-item mob-vers"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item  mob-vers"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item  mob-vers"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item  mob-vers"><a class="page-link" href="#">4</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#">
+				      	Next <img src="assets/img/pagination-arrow-right.png" alt="arrow icon">
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

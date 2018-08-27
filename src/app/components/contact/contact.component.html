@@ -1,0 +1,69 @@
+<div class="contact-bckg">
+	<div class="container">
+		<!-- headings -->
+		<h1 class="contact-heading">Contact Lowned</h1>
+		<h1 class="contact-heading-sec">Feel Free to Contact Us For Any Questions. We'd Love to Hear From You.</h1>
+		<hr class="divide-map">
+		<img src="assets/img/path.png" alt="path to map" class="img-fluid path-map">
+		<div class="row">
+			<div class="col-sm-12 col-md-7">
+				<img src="assets/img/map.png" class="img-fluid map" alt="map of the world">
+			</div>
+			<div class="col-sm-12 col-md-5">
+				<div class="row">
+					<!-- contact info -->
+					<div class="offset-md-4 col-md-7">
+						<p class="contact-info">info@lowend.com<br>
+						   <span>(123) 456-7890<br>
+						   #10 Tech Avenue, New York</span><br>
+						   Alahambra
+						</p>
+					</div>
+				</div>
+					<!-- form -->
+					<div class="row">
+						<div class="offset-md-1 col">
+							<h3 class="form-drop-heading">DROP YOUR MESSAGE</h3>
+							<form class="form" #userForm="ngForm">
+								<div class="row">
+									<div class="form-group col-sm-12 col-md-6">
+										<input 
+											type="text" 
+											class="form-control" 
+											placeholder="Name:"
+											name="name"
+											[(ngModel)]="user.name"
+											required>
+									</div>
+									<div class="form-group col-sm-12 col-md-6">
+										<input 
+											type="email" 
+											class="form-control" 
+											placeholder="E-mail:"
+											[(ngModel)]="user.email"
+											name="email"
+											email
+											required>
+									</div>		
+								</div>
+							
+								<div class="form-group">
+									<textarea 
+										class="form-control" 
+										placeholder="Message:"
+										name="message"
+										[(ngModel)]="user.message"
+										required></textarea>
+								</div>
+								<button 
+									class="form-btn"
+									(click)="onSubmit()"
+									[disabled]="userForm.invalid">Submit</button>
+							</form>
+						</div>
+					</div>
+			</div>
+		</div>
+
+	</div>
+</div>

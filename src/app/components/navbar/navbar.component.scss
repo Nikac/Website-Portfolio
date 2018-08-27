@@ -1,0 +1,181 @@
+@import '../../../styles/colors';
+
+.line {
+	width: 100%;
+	height: 5px;
+	background-color: $yellowColor;
+}
+
+.container {
+	position: relative;
+	.arrow {
+		position: absolute;
+		top: 0;
+		right: 25px;
+	}
+	// hamburger navmenu
+	.navbar-toggler {
+		position: absolute;
+		top: 40px;
+		right: 25px;
+		background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+		background-repeat: no-repeat;
+		backgroun-size: cover;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+// navmenu
+.navbar {
+	width: 100%;
+	padding: 0;
+	background-color: $navGray;
+	span {
+		color: white;
+	}
+}
+// logo div
+.logo {
+	width: 100%;
+	.logo-headline {
+		margin-top: 20px;
+		margin-bottom: 0;
+		color: $yellowColor;
+		line-height: 0.7;
+		font-weight: 300;
+		font-size: 65px;
+		font-family: 'Discognate';
+	}
+
+	.logo-paragraph {
+		color: $yellowColor;
+		font-size: 14px;;
+		font-family: 'Conv_Tahoma';
+	}
+}
+
+// social icons in navmenu
+
+.social-network-icons {
+	padding-top: 10px;
+	padding-left: 30%;
+	height: 40px;
+	li {
+		width: 30px;
+		height: 30px;
+		margin-right: 10px;
+		.facebook {
+			&:hover {
+				background-color: $facebookColor;
+			}
+		}
+		.twitter {
+			&:hover {
+				background-color: $twitterColor;
+			}
+		}
+		.dribble {
+			&:hover {
+				background-color: $dribbleColor;
+			}
+		}
+		.forrst {
+			&:hover {
+				background-color: $forrstColor;
+			}
+		}
+		.vimeo {
+			&:hover {
+				background-color: $vimeoColor;
+			}
+		}
+		.skype {
+			&:hover {
+				background-color: $skypeColor;
+			}
+		}
+		a {
+			width: 30px;
+			height: 30px;
+			border-radius: 30px;
+			padding: 2px 8px;
+			background-color: $socialBckg;
+		}
+		.facebook {
+
+		}
+	}
+}
+
+// navmenu 
+.row {
+	.nav-menu {
+		padding-top: 30px;
+		li {
+			padding: 0px;
+			margin: 0px 5px;
+			text-align: center;
+			a {
+				height:50px;
+				text-transform: uppercase;
+				color: #909090;
+				font-size: 12px;
+				font-family: 'Helvetica';
+				font-weight: 400;
+				text-decoration: none;
+				border-bottom: 0px solid #ffd21e;
+				font-family: 'Conv_Helvetica-Normal';
+				&:hover {
+					color: #ffd21e;
+					border-bottom: 2px solid #ffd21e;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	.social-network {
+	  padding-left: 30%;
+    }
+}
+
+// when resize for mob socila icons remove
+@media screen and (max-width: 991px) { 
+	.social-network-icons {
+		display: none;
+	}
+	
+	.row {
+		width: 75%;
+		.nav-menu {
+			padding: 0%;
+			li {
+				width: 100%;
+				display: block;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 800px) { 
+	.row {
+		width: 77%;
+	}
+}
+@media screen and (max-width: 600px) { 
+	.row {
+		width: 80%;
+	}
+	.logo {
+		.logo-headline {
+			font-size: 50px;
+		}
+		.logo-paragraph {
+			font-size: 12px;
+		}
+	}
+}
+
